@@ -6,7 +6,7 @@ on:
 
 jobs:
   echo:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Show the trigger
         run: |
