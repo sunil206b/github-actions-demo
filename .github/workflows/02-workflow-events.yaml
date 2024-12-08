@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Show the trigger
         run: |
-          echo "Even name: ${{github.event_name}}"
+          echo "Even name: ${{ github.event_name }}"
