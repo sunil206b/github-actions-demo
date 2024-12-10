@@ -1,0 +1,16 @@
+name: 04-using-actions
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Printing Folders
+        run: ls
+
+    # 0. Checkout the code from repository
+    # 1. Install dependencies of our application
+    # 2. Execute automated tests
