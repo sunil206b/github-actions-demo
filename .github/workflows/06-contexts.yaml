@@ -1,7 +1,7 @@
 name: 06 - Contexts
 
 on:
-  pull_request:
+  push: 
   workflow_dispatch:
 
 jobs:
@@ -17,3 +17,6 @@ jobs:
           echo "Workflow: ${{ github.workflow }}"
           echo "Run ID: ${{ github.run_id }}"
           echo "Run number: ${{ github.run_number }}"
+      - name: Retrieve variable
+        run: |
+          echo "Variable value ${{ vars.MY_VAR }}"
