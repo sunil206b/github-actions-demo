@@ -48,4 +48,4 @@ jobs:
       - name: Alternative to print env vars
         run: |
           echo "Workflow var: $MY_WORKFLOW_VAR"
-          echo "Overwritten var: MY_OVERWRITTEN_VAR"
+          echo "Overwritten var: $MY_OVERWRITTEN_VAR"
